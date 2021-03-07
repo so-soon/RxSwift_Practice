@@ -40,7 +40,7 @@
                                         <rect key="frame" x="0.0" y="60" width="414" height="598"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LOt-Dk-Uc5">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LOt-Dk-Uc5" customClass="MenuItemTableViewCell" customModule="RxOrder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LOt-Dk-Uc5" id="s3D-9H-BhG">
@@ -159,6 +159,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Zoo-EI-KhF"/>
                     <connections>
+                        <outlet property="btnClear" destination="L34-7S-mDa" id="fh4-bQ-BUD"/>
+                        <outlet property="btnOrder" destination="phx-Lp-uYy" id="iom-hk-tE9"/>
+                        <outlet property="lbItemCount" destination="b1e-hi-IST" id="YGf-IS-Q8x"/>
+                        <outlet property="lbTotalPrice" destination="y2r-5V-WjD" id="Gx4-Cg-utP"/>
                         <segue destination="8hn-1O-fw6" kind="show" id="Obr-G1-aMW"/>
                     </connections>
                 </viewController>
