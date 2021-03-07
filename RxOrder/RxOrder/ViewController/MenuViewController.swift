@@ -14,6 +14,11 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    //MARK:- Interface Builder Links
+    
+    @IBOutlet weak var btnClear: UIButton!
+    @IBOutlet weak var lbItemCount: UILabel!
+    @IBOutlet weak var lbTotalPrice: UILabel!
+    @IBOutlet weak var btnOrder: UIButton!
 }
 
