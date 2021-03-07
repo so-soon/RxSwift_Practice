@@ -8,7 +8,9 @@
 import UIKit
 
 class OrderViewController: UIViewController {
-
+    //MARK:- Properties
+    static let segueIdFromMenu : String = "OrderViewController"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

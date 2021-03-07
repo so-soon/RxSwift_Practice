@@ -40,7 +40,7 @@
                                         <rect key="frame" x="0.0" y="60" width="414" height="554"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LOt-Dk-Uc5" customClass="MenuItemTableViewCell" customModule="RxOrder" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuItemTableViewCell" id="LOt-Dk-Uc5" customClass="MenuItemTableViewCell" customModule="RxOrder" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LOt-Dk-Uc5" id="s3D-9H-BhG">
@@ -175,7 +175,7 @@
                         <outlet property="lbItemCount" destination="b1e-hi-IST" id="YGf-IS-Q8x"/>
                         <outlet property="lbTotalPrice" destination="y2r-5V-WjD" id="Gx4-Cg-utP"/>
                         <outlet property="tbvMenuList" destination="EqC-nr-j0a" id="BNO-yn-172"/>
-                        <segue destination="8hn-1O-fw6" kind="show" id="Obr-G1-aMW"/>
+                        <segue destination="8hn-1O-fw6" kind="show" identifier="OrderViewController" id="Obr-G1-aMW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

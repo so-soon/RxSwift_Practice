@@ -24,6 +24,10 @@ class MenuViewController: UIViewController {
         bindingUI()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Todo : Impl binding between menuview and orderview
+    }
+    
     //MARK:- Binding UI
     func bindingUI() {
         // MARK: - Reactive INPUT
@@ -36,6 +40,13 @@ class MenuViewController: UIViewController {
             .disposed(by: disposeBag)
         
         // MARK: - Reactive NAVIGATION
+        
+        viewModel.selectedMenuData
+            .subscribe(onNext: {
+                [weak self] selectedDataArray in
+                self?.navigationController?.performSegue(withIdentifier: OrderViewController.segueIdFromMenu, sender: selectedDataArray)
+            })
+            .disposed(by: disposeBag)
         
         // MARK: - Reactive OUTPUT
         
@@ -52,6 +63,8 @@ class MenuViewController: UIViewController {
         viewModel.menuDataForTableView
             .bind(to: tbvMenuList.rx.items(cellIdentifier: MenuItemTableViewCell.identifier, cellType: MenuItemTableViewCell.self)){
                 (row, model, cell) in
+                
+                // Todo : Cell rx binding
                 
                 
             }.disposed(by: disposeBag)

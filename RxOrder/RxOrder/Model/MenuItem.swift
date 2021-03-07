@@ -12,7 +12,7 @@ struct MenuItem : Decodable {
     let price : Int
 }
 
-struct MenuItemModel {
+struct MenuItemViewModel {
     let id : String
     let name : String
     let price : String

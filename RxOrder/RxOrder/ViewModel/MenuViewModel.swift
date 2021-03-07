@@ -9,7 +9,7 @@ import RxCocoa
 
 class MenuViewModel {
     //MARK:- Properties
-    private var menuData : [MenuViewModel] = [] // Todo : load from json
+
     let disposeBag : DisposeBag = DisposeBag()
     
     // MARK: - Reactive INPUT
@@ -17,12 +17,36 @@ class MenuViewModel {
     let showOrderPage : PublishSubject<Void> = PublishSubject()
     
     // MARK: - Reactive OUTPUT
-    let menuDataForTableView : BehaviorSubject<[MenuViewModel]> = BehaviorSubject(value: [])
-    let selectedMenuData : PublishSubject<[MenuViewModel]> = PublishSubject()
+    let menuDataForTableView : BehaviorSubject<[MenuItemViewModel]> = BehaviorSubject(value: [])
+    let selectedMenuData : PublishSubject<[MenuItemViewModel]> = PublishSubject()
     let itemCount : BehaviorRelay<Int> = BehaviorRelay(value: 0)
     let totalPrice : BehaviorRelay<Int> = BehaviorRelay(value: 0)
     
     init() {
+        // MARK: - Reactive INPUT
+        clearMenuList
+            .withLatestFrom(menuDataForTableView)
+            .map({ $0.map({ MenuItemViewModel(id: $0.id, name: $0.name, price: $0.price, count: 0) }) })
+            .subscribe(onNext: menuDataForTableView.onNext)
+            .disposed(by: disposeBag)
+        
+        showOrderPage
+            .withLatestFrom(menuDataForTableView)
+            .filter({$0.count != 0 })
+            .bind(to: selectedMenuData)
+            .disposed(by: disposeBag)
+            
+        
+        // MARK: - Reactive OUTPUT
+        let menuData : [MenuItemViewModel] = [] // Todo : load from json
+        let data = Observable.just(menuData)
+        
+        data.bind(to: menuDataForTableView)
+            .disposed(by: disposeBag)
+        
+        
+        
+        
         
     }
 }
