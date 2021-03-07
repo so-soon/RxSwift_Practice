@@ -15,6 +15,6 @@ struct MenuItem : Decodable {
 struct MenuItemViewModel {
     let id : String
     let name : String
-    let price : String
+    let price : Int
     var count : Int
 }

@@ -61,10 +61,37 @@ class MenuViewController: UIViewController {
             .disposed(by: disposeBag)
         
         viewModel.menuDataForTableView
+            .debug("cell load")
             .bind(to: tbvMenuList.rx.items(cellIdentifier: MenuItemTableViewCell.identifier, cellType: MenuItemTableViewCell.self)){
                 (row, model, cell) in
                 
-                // Todo : Cell rx binding
+                // MARK: - Reactive INPUT
+                cell.btnIncreaseCount.rx.tap
+                    .map({(model,1)})
+                    .bind(to: self.viewModel.changeItemCount)
+                    .disposed(by: cell.disposeBag)
+                
+                cell.btnDecreaseCount.rx.tap
+                    .map({(model,-1)})
+                    .bind(to: self.viewModel.changeItemCount)
+                    .disposed(by: cell.disposeBag)
+                
+                
+                // MARK: - Reactive OUTPUT
+                self.viewModel.menuDataForTableView
+                    .map({$0[row].name})
+                    .bind(to: cell.lbMenuName.rx.text)
+                    .disposed(by: cell.disposeBag)
+                
+                self.viewModel.menuDataForTableView
+                    .map({"\($0[row].price)"})
+                    .bind(to: cell.lbMenuPrice.rx.text)
+                    .disposed(by: cell.disposeBag)
+                
+                self.viewModel.menuDataForTableView
+                    .map({"\($0[row].count)"})
+                    .bind(to: cell.lbMenuCount.rx.text)
+                    .disposed(by: cell.disposeBag)
                 
                 
             }.disposed(by: disposeBag)

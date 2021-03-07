@@ -13,17 +13,7 @@ class MenuItemTableViewCell: UITableViewCell {
     static let identifier : String = "MenuItemTableViewCell"
     var disposeBag : DisposeBag = DisposeBag()
     private let cellDisposeBag : DisposeBag = DisposeBag()
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    var viewModel : MenuViewModel?
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -34,12 +24,8 @@ class MenuItemTableViewCell: UITableViewCell {
     @IBOutlet weak var lbMenuName: UILabel!
     @IBOutlet weak var lbMenuCount: UILabel!
     @IBOutlet weak var lbMenuPrice: UILabel!
-    
-    @IBAction func pressedBtnIncreaseItemCount(_ sender: UIButton) {
-    }
-    
-    @IBAction func preseedBtnDecreaseItemCount(_ sender: UIButton) {
-    }
-    
 
+    @IBOutlet weak var btnIncreaseCount: UIButton!
+    @IBOutlet weak var btnDecreaseCount: UIButton!
+    
 }

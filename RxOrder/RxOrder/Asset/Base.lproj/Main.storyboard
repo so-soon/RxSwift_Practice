@@ -50,16 +50,10 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06R-fj-cII">
                                                             <rect key="frame" x="10" y="11" width="18" height="22"/>
                                                             <state key="normal" image="plus" catalog="system"/>
-                                                            <connections>
-                                                                <action selector="pressedBtnIncreaseItemCount:" destination="LOt-Dk-Uc5" eventType="touchUpInside" id="c51-6Z-5a4"/>
-                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqp-hk-JUn">
                                                             <rect key="frame" x="33" y="11" width="18" height="22"/>
                                                             <state key="normal" image="minus" catalog="system"/>
-                                                            <connections>
-                                                                <action selector="preseedBtnDecreaseItemCount:" destination="LOt-Dk-Uc5" eventType="touchUpInside" id="pJp-7D-MMX"/>
-                                                            </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQu-PI-jhj">
                                                             <rect key="frame" x="71" y="11.5" width="92" height="20.5"/>
@@ -94,6 +88,8 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="btnDecreaseCount" destination="Lqp-hk-JUn" id="0Y8-pL-fl7"/>
+                                                    <outlet property="btnIncreaseCount" destination="06R-fj-cII" id="KUX-8i-Lx0"/>
                                                     <outlet property="lbMenuCount" destination="9qJ-qK-ulP" id="VWV-Zm-8MY"/>
                                                     <outlet property="lbMenuName" destination="HQu-PI-jhj" id="Fox-7c-dtw"/>
                                                     <outlet property="lbMenuPrice" destination="gtn-ks-CpF" id="diX-dc-D3z"/>
