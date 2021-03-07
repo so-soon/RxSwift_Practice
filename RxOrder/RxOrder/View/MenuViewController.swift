@@ -44,14 +44,14 @@ class MenuViewController: UIViewController {
         viewModel.selectedMenuData
             .subscribe(onNext: {
                 [weak self] selectedDataArray in
-                self?.navigationController?.performSegue(withIdentifier: OrderViewController.segueIdFromMenu, sender: selectedDataArray)
+                self?.performSegue(withIdentifier: OrderViewController.segueIdFromMenu, sender: selectedDataArray)
             })
             .disposed(by: disposeBag)
         
         // MARK: - Reactive OUTPUT
         
         viewModel.itemCount
-            .map({"\($0)"})
+            .map({"\($0) items"})
             .bind(to: lbItemCount.rx.text)
             .disposed(by: disposeBag)
         

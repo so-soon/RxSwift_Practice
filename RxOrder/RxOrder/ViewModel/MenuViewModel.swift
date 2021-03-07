@@ -62,7 +62,7 @@ class MenuViewModel {
             .withLatestFrom(menuDataForTableView){ (updated, originalArray) in
                 originalArray.map( { original -> MenuItemViewModel in
                     if original.id == updated.menu.id{
-                        return MenuItemViewModel(id: original.id, name: original.name, price: original.price, count: original.count+updated.inc)
+                        return MenuItemViewModel(id: original.id, name: original.name, price: original.price, count: max(original.count+updated.inc,0))
                     }else{return original}
                 })
             }
