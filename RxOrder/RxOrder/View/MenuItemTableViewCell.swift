@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import RxSwift
 
 class MenuItemTableViewCell: UITableViewCell {
-
+    //MARK:- Properties
+    static let identifier : String = "MenuItemTableViewCell"
+    var disposeBag : DisposeBag = DisposeBag()
+    private let cellDisposeBag : DisposeBag = DisposeBag()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,6 +25,10 @@ class MenuItemTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
     //MARK:- Interface Builder Links
     
     @IBOutlet weak var lbMenuName: UILabel!
