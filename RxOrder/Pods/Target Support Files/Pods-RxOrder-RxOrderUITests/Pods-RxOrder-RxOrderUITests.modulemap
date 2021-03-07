@@ -1,0 +1,6 @@
+framework module Pods_RxOrder_RxOrderUITests {
+  umbrella header "Pods-RxOrder-RxOrderUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
