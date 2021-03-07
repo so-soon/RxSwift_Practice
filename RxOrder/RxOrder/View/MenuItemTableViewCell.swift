@@ -19,5 +19,18 @@ class MenuItemTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    //MARK:- Interface Builder Links
+    
+    @IBOutlet weak var lbMenuName: UILabel!
+    @IBOutlet weak var lbMenuCount: UILabel!
+    @IBOutlet weak var lbMenuPrice: UILabel!
+    
+    @IBAction func pressedBtnIncreaseItemCount(_ sender: UIButton) {
+    }
+    
+    @IBAction func preseedBtnDecreaseItemCount(_ sender: UIButton) {
+    }
+    
 
 }
