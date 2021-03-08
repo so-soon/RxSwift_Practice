@@ -1,0 +1,6 @@
+framework module Pods_RxFacebookMe {
+  umbrella header "Pods-RxFacebookMe-umbrella.h"
+
+  export *
+  module * { export * }
+}

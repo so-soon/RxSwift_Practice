@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052CABBAB41C18EBD18D78D6 /* Pods_RxFacebookMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7CFB5BC15FC51782A4A2A1 /* Pods_RxFacebookMeTests.framework */; };
+		259F860225F60D25007DAC4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F860125F60D25007DAC4A /* AppDelegate.swift */; };
+		259F860425F60D25007DAC4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F860325F60D25007DAC4A /* SceneDelegate.swift */; };
+		259F860625F60D25007DAC4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F860525F60D25007DAC4A /* ViewController.swift */; };
+		259F860925F60D25007DAC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259F860725F60D25007DAC4A /* Main.storyboard */; };
+		259F860B25F60D27007DAC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 259F860A25F60D27007DAC4A /* Assets.xcassets */; };
+		259F860E25F60D27007DAC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 259F860C25F60D27007DAC4A /* LaunchScreen.storyboard */; };
+		259F861925F60D27007DAC4A /* RxFacebookMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F861825F60D27007DAC4A /* RxFacebookMeTests.swift */; };
+		259F862425F60D27007DAC4A /* RxFacebookMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F862325F60D27007DAC4A /* RxFacebookMeUITests.swift */; };
+		721238E69A2DA3C9DE4398D0 /* Pods_RxFacebookMe_RxFacebookMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DDB6EB5FF8D37DD4DDBE7C /* Pods_RxFacebookMe_RxFacebookMeUITests.framework */; };
+		D58C53F7CB22AA21757E836C /* Pods_RxFacebookMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCE25D845E98D65DCE9E463 /* Pods_RxFacebookMe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		259F861525F60D27007DAC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 259F85F625F60D25007DAC4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 259F85FD25F60D25007DAC4A;
+			remoteInfo = RxFacebookMe;
+		};
+		259F862025F60D27007DAC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 259F85F625F60D25007DAC4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 259F85FD25F60D25007DAC4A;
+			remoteInfo = RxFacebookMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0276E8999167F8E35525BED1 /* Pods-RxFacebookMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFacebookMeTests.release.xcconfig"; path = "Target Support Files/Pods-RxFacebookMeTests/Pods-RxFacebookMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		259F85FE25F60D25007DAC4A /* RxFacebookMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFacebookMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		259F860125F60D25007DAC4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		259F860325F60D25007DAC4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		259F860525F60D25007DAC4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		259F860825F60D25007DAC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		259F860A25F60D27007DAC4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		259F860D25F60D27007DAC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		259F860F25F60D27007DAC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259F861425F60D27007DAC4A /* RxFacebookMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxFacebookMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		259F861825F60D27007DAC4A /* RxFacebookMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFacebookMeTests.swift; sourceTree = "<group>"; };
+		259F861A25F60D27007DAC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		259F861F25F60D27007DAC4A /* RxFacebookMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxFacebookMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		259F862325F60D27007DAC4A /* RxFacebookMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFacebookMeUITests.swift; sourceTree = "<group>"; };
+		259F862525F60D27007DAC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FCE25D845E98D65DCE9E463 /* Pods_RxFacebookMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DDB6EB5FF8D37DD4DDBE7C /* Pods_RxFacebookMe_RxFacebookMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMe_RxFacebookMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7CFB5BC15FC51782A4A2A1 /* Pods_RxFacebookMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2AA33EAF4D4A317AA353C70 /* Pods-RxFacebookMe-RxFacebookMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFacebookMe-RxFacebookMeUITests.release.xcconfig"; path = "Target Support Files/Pods-RxFacebookMe-RxFacebookMeUITests/Pods-RxFacebookMe-RxFacebookMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3B53883FC07FAB525220EE7 /* Pods-RxFacebookMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFacebookMe.debug.xcconfig"; path = "Target Support Files/Pods-RxFacebookMe/Pods-RxFacebookMe.debug.xcconfig"; sourceTree = "<group>"; };
+		C608D670A9AC22334E569ABD /* Pods-RxFacebookMe-RxFacebookMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFacebookMe-RxFacebookMeUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxFacebookMe-RxFacebookMeUITests/Pods-RxFacebookMe-RxFacebookMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D825B114CB6D5950D6746E8A /* Pods-RxFacebookMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFacebookMe.release.xcconfig"; path = "Target Support Files/Pods-RxFacebookMe/Pods-RxFacebookMe.release.xcconfig"; sourceTree = "<group>"; };
+		DA43DAE93F7163790B1F132A /* Pods-RxFacebookMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFacebookMeTests.debug.xcconfig"; path = "Target Support Files/Pods-RxFacebookMeTests/Pods-RxFacebookMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		259F85FB25F60D25007DAC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58C53F7CB22AA21757E836C /* Pods_RxFacebookMe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		259F861125F60D27007DAC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				052CABBAB41C18EBD18D78D6 /* Pods_RxFacebookMeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		259F861C25F60D27007DAC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				721238E69A2DA3C9DE4398D0 /* Pods_RxFacebookMe_RxFacebookMeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		259F85F525F60D25007DAC4A = {
+			isa = PBXGroup;
+			children = (
+				259F860025F60D25007DAC4A /* RxFacebookMe */,
+				259F861725F60D27007DAC4A /* RxFacebookMeTests */,
+				259F862225F60D27007DAC4A /* RxFacebookMeUITests */,
+				259F85FF25F60D25007DAC4A /* Products */,
+				DE12F0BE92DEC48AB05BCE49 /* Pods */,
+				5EEE086AEFF168CA61533F18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		259F85FF25F60D25007DAC4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				259F85FE25F60D25007DAC4A /* RxFacebookMe.app */,
+				259F861425F60D27007DAC4A /* RxFacebookMeTests.xctest */,
+				259F861F25F60D27007DAC4A /* RxFacebookMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		259F860025F60D25007DAC4A /* RxFacebookMe */ = {
+			isa = PBXGroup;
+			children = (
+				259F860125F60D25007DAC4A /* AppDelegate.swift */,
+				259F860325F60D25007DAC4A /* SceneDelegate.swift */,
+				259F860525F60D25007DAC4A /* ViewController.swift */,
+				259F860725F60D25007DAC4A /* Main.storyboard */,
+				259F860A25F60D27007DAC4A /* Assets.xcassets */,
+				259F860C25F60D27007DAC4A /* LaunchScreen.storyboard */,
+				259F860F25F60D27007DAC4A /* Info.plist */,
+			);
+			path = RxFacebookMe;
+			sourceTree = "<group>";
+		};
+		259F861725F60D27007DAC4A /* RxFacebookMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				259F861825F60D27007DAC4A /* RxFacebookMeTests.swift */,
+				259F861A25F60D27007DAC4A /* Info.plist */,
+			);
+			path = RxFacebookMeTests;
+			sourceTree = "<group>";
+		};
+		259F862225F60D27007DAC4A /* RxFacebookMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				259F862325F60D27007DAC4A /* RxFacebookMeUITests.swift */,
+				259F862525F60D27007DAC4A /* Info.plist */,
+			);
+			path = RxFacebookMeUITests;
+			sourceTree = "<group>";
+		};
+		5EEE086AEFF168CA61533F18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FCE25D845E98D65DCE9E463 /* Pods_RxFacebookMe.framework */,
+				57DDB6EB5FF8D37DD4DDBE7C /* Pods_RxFacebookMe_RxFacebookMeUITests.framework */,
+				6E7CFB5BC15FC51782A4A2A1 /* Pods_RxFacebookMeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE12F0BE92DEC48AB05BCE49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3B53883FC07FAB525220EE7 /* Pods-RxFacebookMe.debug.xcconfig */,
+				D825B114CB6D5950D6746E8A /* Pods-RxFacebookMe.release.xcconfig */,
+				C608D670A9AC22334E569ABD /* Pods-RxFacebookMe-RxFacebookMeUITests.debug.xcconfig */,
+				A2AA33EAF4D4A317AA353C70 /* Pods-RxFacebookMe-RxFacebookMeUITests.release.xcconfig */,
+				DA43DAE93F7163790B1F132A /* Pods-RxFacebookMeTests.debug.xcconfig */,
+				0276E8999167F8E35525BED1 /* Pods-RxFacebookMeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		259F85FD25F60D25007DAC4A /* RxFacebookMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 259F862825F60D27007DAC4A /* Build configuration list for PBXNativeTarget "RxFacebookMe" */;
+			buildPhases = (
+				C0CFA78B8A1E9D3D5AEF906F /* [CP] Check Pods Manifest.lock */,
+				259F85FA25F60D25007DAC4A /* Sources */,
+				259F85FB25F60D25007DAC4A /* Frameworks */,
+				259F85FC25F60D25007DAC4A /* Resources */,
+				05A41F6EC3FDD9948BF64FF5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxFacebookMe;
+			productName = RxFacebookMe;
+			productReference = 259F85FE25F60D25007DAC4A /* RxFacebookMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		259F861325F60D27007DAC4A /* RxFacebookMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 259F862B25F60D27007DAC4A /* Build configuration list for PBXNativeTarget "RxFacebookMeTests" */;
+			buildPhases = (
+				566FE561D22188E053A53BD6 /* [CP] Check Pods Manifest.lock */,
+				259F861025F60D27007DAC4A /* Sources */,
+				259F861125F60D27007DAC4A /* Frameworks */,
+				259F861225F60D27007DAC4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				259F861625F60D27007DAC4A /* PBXTargetDependency */,
+			);
+			name = RxFacebookMeTests;
+			productName = RxFacebookMeTests;
+			productReference = 259F861425F60D27007DAC4A /* RxFacebookMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		259F861E25F60D27007DAC4A /* RxFacebookMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 259F862E25F60D27007DAC4A /* Build configuration list for PBXNativeTarget "RxFacebookMeUITests" */;
+			buildPhases = (
+				977B1B3C19D8C6CF7C724F1C /* [CP] Check Pods Manifest.lock */,
+				259F861B25F60D27007DAC4A /* Sources */,
+				259F861C25F60D27007DAC4A /* Frameworks */,
+				259F861D25F60D27007DAC4A /* Resources */,
+				05A28AF1213276F7EA74F1E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				259F862125F60D27007DAC4A /* PBXTargetDependency */,
+			);
+			name = RxFacebookMeUITests;
+			productName = RxFacebookMeUITests;
+			productReference = 259F861F25F60D27007DAC4A /* RxFacebookMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		259F85F625F60D25007DAC4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					259F85FD25F60D25007DAC4A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					259F861325F60D27007DAC4A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 259F85FD25F60D25007DAC4A;
+					};
+					259F861E25F60D27007DAC4A = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 259F85FD25F60D25007DAC4A;
+					};
+				};
+			};
+			buildConfigurationList = 259F85F925F60D25007DAC4A /* Build configuration list for PBXProject "RxFacebookMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 259F85F525F60D25007DAC4A;
+			productRefGroup = 259F85FF25F60D25007DAC4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				259F85FD25F60D25007DAC4A /* RxFacebookMe */,
+				259F861325F60D27007DAC4A /* RxFacebookMeTests */,
+				259F861E25F60D27007DAC4A /* RxFacebookMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		259F85FC25F60D25007DAC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259F860E25F60D27007DAC4A /* LaunchScreen.storyboard in Resources */,
+				259F860B25F60D27007DAC4A /* Assets.xcassets in Resources */,
+				259F860925F60D25007DAC4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		259F861225F60D27007DAC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		259F861D25F60D27007DAC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05A28AF1213276F7EA74F1E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFacebookMe-RxFacebookMeUITests/Pods-RxFacebookMe-RxFacebookMeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFacebookMe-RxFacebookMeUITests/Pods-RxFacebookMe-RxFacebookMeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxFacebookMe-RxFacebookMeUITests/Pods-RxFacebookMe-RxFacebookMeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		05A41F6EC3FDD9948BF64FF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFacebookMe/Pods-RxFacebookMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFacebookMe/Pods-RxFacebookMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxFacebookMe/Pods-RxFacebookMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566FE561D22188E053A53BD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxFacebookMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		977B1B3C19D8C6CF7C724F1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxFacebookMe-RxFacebookMeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0CFA78B8A1E9D3D5AEF906F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxFacebookMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		259F85FA25F60D25007DAC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259F860625F60D25007DAC4A /* ViewController.swift in Sources */,
+				259F860225F60D25007DAC4A /* AppDelegate.swift in Sources */,
+				259F860425F60D25007DAC4A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		259F861025F60D27007DAC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259F861925F60D27007DAC4A /* RxFacebookMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		259F861B25F60D27007DAC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				259F862425F60D27007DAC4A /* RxFacebookMeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		259F861625F60D27007DAC4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 259F85FD25F60D25007DAC4A /* RxFacebookMe */;
+			targetProxy = 259F861525F60D27007DAC4A /* PBXContainerItemProxy */;
+		};
+		259F862125F60D27007DAC4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 259F85FD25F60D25007DAC4A /* RxFacebookMe */;
+			targetProxy = 259F862025F60D27007DAC4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		259F860725F60D25007DAC4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				259F860825F60D25007DAC4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		259F860C25F60D27007DAC4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				259F860D25F60D27007DAC4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		259F862625F60D27007DAC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		259F862725F60D27007DAC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		259F862925F60D27007DAC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B53883FC07FAB525220EE7 /* Pods-RxFacebookMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62MCJDNV3Q;
+				INFOPLIST_FILE = RxFacebookMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = soonhyuk.RxFacebookMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		259F862A25F60D27007DAC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D825B114CB6D5950D6746E8A /* Pods-RxFacebookMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62MCJDNV3Q;
+				INFOPLIST_FILE = RxFacebookMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = soonhyuk.RxFacebookMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		259F862C25F60D27007DAC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA43DAE93F7163790B1F132A /* Pods-RxFacebookMeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62MCJDNV3Q;
+				INFOPLIST_FILE = RxFacebookMeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = soonhyuk.RxFacebookMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxFacebookMe.app/RxFacebookMe";
+			};
+			name = Debug;
+		};
+		259F862D25F60D27007DAC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0276E8999167F8E35525BED1 /* Pods-RxFacebookMeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62MCJDNV3Q;
+				INFOPLIST_FILE = RxFacebookMeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = soonhyuk.RxFacebookMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxFacebookMe.app/RxFacebookMe";
+			};
+			name = Release;
+		};
+		259F862F25F60D27007DAC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C608D670A9AC22334E569ABD /* Pods-RxFacebookMe-RxFacebookMeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62MCJDNV3Q;
+				INFOPLIST_FILE = RxFacebookMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = soonhyuk.RxFacebookMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RxFacebookMe;
+			};
+			name = Debug;
+		};
+		259F863025F60D27007DAC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2AA33EAF4D4A317AA353C70 /* Pods-RxFacebookMe-RxFacebookMeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62MCJDNV3Q;
+				INFOPLIST_FILE = RxFacebookMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = soonhyuk.RxFacebookMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RxFacebookMe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		259F85F925F60D25007DAC4A /* Build configuration list for PBXProject "RxFacebookMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				259F862625F60D27007DAC4A /* Debug */,
+				259F862725F60D27007DAC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		259F862825F60D27007DAC4A /* Build configuration list for PBXNativeTarget "RxFacebookMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				259F862925F60D27007DAC4A /* Debug */,
+				259F862A25F60D27007DAC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		259F862B25F60D27007DAC4A /* Build configuration list for PBXNativeTarget "RxFacebookMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				259F862C25F60D27007DAC4A /* Debug */,
+				259F862D25F60D27007DAC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		259F862E25F60D27007DAC4A /* Build configuration list for PBXNativeTarget "RxFacebookMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				259F862F25F60D27007DAC4A /* Debug */,
+				259F863025F60D27007DAC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 259F85F625F60D25007DAC4A /* Project object */;
+}

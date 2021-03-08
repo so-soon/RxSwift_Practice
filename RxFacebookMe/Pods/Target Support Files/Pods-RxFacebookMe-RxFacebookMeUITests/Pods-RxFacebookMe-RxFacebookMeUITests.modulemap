@@ -1,0 +1,6 @@
+framework module Pods_RxFacebookMe_RxFacebookMeUITests {
+  umbrella header "Pods-RxFacebookMe-RxFacebookMeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
