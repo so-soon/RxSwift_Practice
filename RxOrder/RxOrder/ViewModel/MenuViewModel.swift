@@ -34,7 +34,7 @@ class MenuViewModel {
         
         showOrderPage
             .withLatestFrom(menuDataForTableView)
-            .filter({$0.count != 0 })
+            .map({$0.filter({$0.count != 0}) })
             .bind(to: selectedMenuData)
             .disposed(by: disposeBag)
             

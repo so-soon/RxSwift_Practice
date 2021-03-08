@@ -25,7 +25,15 @@ class MenuViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Todo : Impl binding between menuview and orderview
+        if segue.identifier ?? "" == OrderViewController.segueIdFromMenu{
+            guard let selectedDataArray = sender as? [MenuItemViewModel] else{return}
+            guard let orderVC = segue.destination as? OrderViewController else{return}
+            
+            let orderViewModel = OrderViewModel(selectedData: selectedDataArray)
+            
+            orderVC.viewModel = orderViewModel
+            
+        }
     }
     
     //MARK:- Binding UI
