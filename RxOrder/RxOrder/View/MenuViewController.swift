@@ -38,6 +38,7 @@ class MenuViewController: UIViewController {
     
     //MARK:- Binding UI
     func bindingUI() {
+        
         // MARK: - Reactive INPUT
         btnClear.rx.tap
             .bind(to: viewModel.clearMenuList)
@@ -69,7 +70,6 @@ class MenuViewController: UIViewController {
             .disposed(by: disposeBag)
         
         viewModel.menuDataForTableView
-            .debug("cell load")
             .bind(to: tbvMenuList.rx.items(cellIdentifier: MenuItemTableViewCell.identifier, cellType: MenuItemTableViewCell.self)){
                 (row, model, cell) in
                 
@@ -100,18 +100,26 @@ class MenuViewController: UIViewController {
                     .map({"\($0[row].count)"})
                     .bind(to: cell.lbMenuCount.rx.text)
                     .disposed(by: cell.disposeBag)
-                
-                
             }.disposed(by: disposeBag)
+        
+        viewModel.isLoading
+            .bind(to: aiLoadingMenu.rx.isAnimating)
+            .disposed(by: disposeBag)
+        
+        viewModel.isLoading
+            .map{!$0}
+            .bind(to: aiLoadingMenu.rx.isHidden)
+            .disposed(by: disposeBag)
     }
     
     
     //MARK:- Interface Builder Links
-    
+
     @IBOutlet weak var btnClear: UIButton!
     @IBOutlet weak var lbItemCount: UILabel!
     @IBOutlet weak var lbTotalPrice: UILabel!
     @IBOutlet weak var btnOrder: UIButton!
     @IBOutlet weak var tbvMenuList: UITableView!
+    @IBOutlet weak var aiLoadingMenu: UIActivityIndicatorView!
 }
 

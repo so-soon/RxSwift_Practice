@@ -42,9 +42,10 @@ class APIService{
                         
                         let responseData = try JSONDecoder().decode(Response.self, from: jsonData)
                         
-                        let viewModelData = responseData.menus.map({menu -> MenuItemViewModel in MenuItemViewModel(id: String(Date().timeIntervalSince1970), name: menu.name, price: menu.price, count: 0)})
+                        let viewModelData = responseData.menus.map({menu -> MenuItemViewModel in MenuItemViewModel(id: UUID().uuidString, name: menu.name, price: menu.price, count: 0)})
                         
                         emit.onNext(viewModelData)
+                        emit.onCompleted()
                         
                     }catch(let error){
                         emit.onError(error)

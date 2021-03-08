@@ -28,12 +28,17 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="7ae-ms-es1">
+                                                <rect key="frame" x="232" y="18" width="20" height="20"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="3Dk-ak-NoQ" firstAttribute="top" secondItem="gO9-5j-ecB" secondAttribute="top" constant="10" id="Hy6-ON-etI"/>
+                                            <constraint firstItem="7ae-ms-es1" firstAttribute="centerY" secondItem="3Dk-ak-NoQ" secondAttribute="centerY" id="RnT-Fv-oo7"/>
                                             <constraint firstAttribute="height" constant="60" id="UHx-it-IHc"/>
                                             <constraint firstItem="3Dk-ak-NoQ" firstAttribute="leading" secondItem="gO9-5j-ecB" secondAttribute="leading" constant="10" id="gUa-HO-1U0"/>
+                                            <constraint firstItem="7ae-ms-es1" firstAttribute="leading" secondItem="3Dk-ak-NoQ" secondAttribute="trailing" constant="21" id="rNm-y2-xpw"/>
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-nr-j0a">
@@ -166,6 +171,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Zoo-EI-KhF"/>
                     <connections>
+                        <outlet property="aiLoadingMenu" destination="7ae-ms-es1" id="UgL-ye-vzW"/>
                         <outlet property="btnClear" destination="L34-7S-mDa" id="fh4-bQ-BUD"/>
                         <outlet property="btnOrder" destination="phx-Lp-uYy" id="iom-hk-tE9"/>
                         <outlet property="lbItemCount" destination="b1e-hi-IST" id="YGf-IS-Q8x"/>

@@ -23,6 +23,7 @@ class MenuViewModel {
     let selectedMenuData : PublishSubject<[MenuItemViewModel]> = PublishSubject()
     let itemCount : BehaviorRelay<Int> = BehaviorRelay(value: 0)
     let totalPrice : BehaviorRelay<Int> = BehaviorRelay(value: 0)
+    let isLoading : BehaviorRelay<Bool> = BehaviorRelay(value: false)
     
     init() {
         // MARK: - Reactive INPUT
@@ -37,10 +38,9 @@ class MenuViewModel {
             .map({$0.filter({$0.count != 0}) })
             .bind(to: selectedMenuData)
             .disposed(by: disposeBag)
-            
         
         // MARK: - Reactive OUTPUT
-        
+        isLoading.accept(true)
         
         APIService.shared.getDataFromURL().subscribe(onNext:{
             menuData in
@@ -48,7 +48,10 @@ class MenuViewModel {
         })
         .disposed(by: disposeBag)
         
-        
+        menuDataForTableView
+            .map({$0.count == 0})
+            .bind(to: isLoading)
+            .disposed(by: disposeBag)
         
         menuDataForTableView
             .map({$0.map({ $0.count }).reduce(0, +)})
