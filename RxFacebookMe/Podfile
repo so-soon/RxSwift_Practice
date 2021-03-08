@@ -7,6 +7,7 @@ target 'RxFacebookMe' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
+  pod 'Alamofire'
   # Pods for RxFacebookMe
 
   target 'RxFacebookMeTests' do

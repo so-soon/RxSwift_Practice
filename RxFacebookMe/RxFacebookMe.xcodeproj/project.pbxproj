@@ -17,7 +17,7 @@
 		259F861925F60D27007DAC4A /* RxFacebookMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F861825F60D27007DAC4A /* RxFacebookMeTests.swift */; };
 		259F862425F60D27007DAC4A /* RxFacebookMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F862325F60D27007DAC4A /* RxFacebookMeUITests.swift */; };
 		259F864825F6657C007DAC4A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F864725F6657C007DAC4A /* MainViewModel.swift */; };
-		259F864D25F6668E007DAC4A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F864C25F6668E007DAC4A /* MainViewModel.swift */; };
+		259F864D25F6668E007DAC4A /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F864C25F6668E007DAC4A /* MainModel.swift */; };
 		259F865325F666A9007DAC4A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F865225F666A9007DAC4A /* APIService.swift */; };
 		721238E69A2DA3C9DE4398D0 /* Pods_RxFacebookMe_RxFacebookMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DDB6EB5FF8D37DD4DDBE7C /* Pods_RxFacebookMe_RxFacebookMeUITests.framework */; };
 		D58C53F7CB22AA21757E836C /* Pods_RxFacebookMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCE25D845E98D65DCE9E463 /* Pods_RxFacebookMe.framework */; };
@@ -57,7 +57,7 @@
 		259F862325F60D27007DAC4A /* RxFacebookMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFacebookMeUITests.swift; sourceTree = "<group>"; };
 		259F862525F60D27007DAC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		259F864725F6657C007DAC4A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		259F864C25F6668E007DAC4A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		259F864C25F6668E007DAC4A /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		259F865225F666A9007DAC4A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		3FCE25D845E98D65DCE9E463 /* Pods_RxFacebookMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DDB6EB5FF8D37DD4DDBE7C /* Pods_RxFacebookMe_RxFacebookMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMe_RxFacebookMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,7 +189,7 @@
 		259F864325F66546007DAC4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				259F864C25F6668E007DAC4A /* MainViewModel.swift */,
+				259F864C25F6668E007DAC4A /* MainModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -463,7 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				259F864D25F6668E007DAC4A /* MainViewModel.swift in Sources */,
+				259F864D25F6668E007DAC4A /* MainModel.swift in Sources */,
 				259F860625F60D25007DAC4A /* MainViewController.swift in Sources */,
 				259F860225F60D25007DAC4A /* AppDelegate.swift in Sources */,
 				259F860425F60D25007DAC4A /* SceneDelegate.swift in Sources */,
