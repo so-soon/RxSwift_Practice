@@ -40,13 +40,15 @@ class MenuViewModel {
             
         
         // MARK: - Reactive OUTPUT
-        let menuData : [MenuItemViewModel] = [
-            MenuItemViewModel(id: "0", name: "감자", price: 100, count: 0),
-            MenuItemViewModel(id: "1", name: "고구마", price: 100, count: 0),
-            MenuItemViewModel(id: "2", name: "김치", price: 100, count: 0),
-            MenuItemViewModel(id: "3", name: "치즈", price: 100, count: 0)
-        ] // Todo : load from json,remove dummy
-        menuDataForTableView.onNext(menuData)
+        
+        
+        APIService.shared.getDataFromURL().subscribe(onNext:{
+            menuData in
+            self.menuDataForTableView.onNext(menuData)
+        })
+        .disposed(by: disposeBag)
+        
+        
         
         menuDataForTableView
             .map({$0.map({ $0.count }).reduce(0, +)})
