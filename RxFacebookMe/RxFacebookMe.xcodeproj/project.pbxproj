@@ -19,6 +19,7 @@
 		259F864825F6657C007DAC4A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F864725F6657C007DAC4A /* MainViewModel.swift */; };
 		259F864D25F6668E007DAC4A /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F864C25F6668E007DAC4A /* MainModel.swift */; };
 		259F865325F666A9007DAC4A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F865225F666A9007DAC4A /* APIService.swift */; };
+		259F866A25F73750007DAC4A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F866925F73750007DAC4A /* MainTableViewCell.swift */; };
 		721238E69A2DA3C9DE4398D0 /* Pods_RxFacebookMe_RxFacebookMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DDB6EB5FF8D37DD4DDBE7C /* Pods_RxFacebookMe_RxFacebookMeUITests.framework */; };
 		D58C53F7CB22AA21757E836C /* Pods_RxFacebookMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCE25D845E98D65DCE9E463 /* Pods_RxFacebookMe.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		259F864725F6657C007DAC4A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		259F864C25F6668E007DAC4A /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		259F865225F666A9007DAC4A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		259F866925F73750007DAC4A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		3FCE25D845E98D65DCE9E463 /* Pods_RxFacebookMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57DDB6EB5FF8D37DD4DDBE7C /* Pods_RxFacebookMe_RxFacebookMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMe_RxFacebookMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7CFB5BC15FC51782A4A2A1 /* Pods_RxFacebookMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFacebookMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				259F860525F60D25007DAC4A /* MainViewController.swift */,
+				259F866925F73750007DAC4A /* MainTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				259F864D25F6668E007DAC4A /* MainModel.swift in Sources */,
 				259F860625F60D25007DAC4A /* MainViewController.swift in Sources */,
 				259F860225F60D25007DAC4A /* AppDelegate.swift in Sources */,
+				259F866A25F73750007DAC4A /* MainTableViewCell.swift in Sources */,
 				259F860425F60D25007DAC4A /* SceneDelegate.swift in Sources */,
 				259F865325F666A9007DAC4A /* APIService.swift in Sources */,
 				259F864825F6657C007DAC4A /* MainViewModel.swift in Sources */,
