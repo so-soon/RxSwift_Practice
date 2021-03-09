@@ -15,6 +15,19 @@ enum CellType : Int {
     case kLogout
 }
 
+struct SectionTitle {
+    static func getTitle(section: Int) -> String{
+        switch section {
+        case 1:
+            return "FAVORITES"
+        default:
+            return ""
+        }
+        
+        
+    }
+}
+
 struct RawCellInfo : Decodable {
     let section : Int
     let cellType : Int

@@ -30,6 +30,9 @@
                             <constraint firstItem="UCd-ux-6oA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TfK-hx-yQo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tbvSettings" destination="UCd-ux-6oA" id="VlZ-yI-63W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

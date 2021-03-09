@@ -12,6 +12,7 @@ import RxSwift
 class APIService {
     static let shared = APIService()
     let baseURL = "https://my-json-server.typicode.com/so-soon/json_server/fbMe"
+    
     struct Response : Decodable {
         var cellInfos : [RawCellInfo]
     }
