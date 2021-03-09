@@ -11,7 +11,6 @@ import RxDataSources
 
 
 class MainViewModel {
-    let dataSources : RxTableViewSectionedReloadDataSource<SectionModel<String,CellInfo>>
     
     var cells : [SectionModel<String,CellInfo>] = [
         SectionModel(model: SectionTitle.getTitle(section: 0), items: []),
@@ -31,21 +30,13 @@ class MainViewModel {
         
         
         // MARK: - Reactive OUTPUT
-        dataSources = RxTableViewSectionedReloadDataSource<SectionModel<String,CellInfo>>(
-            configureCell: {(_, tv, indexPath, element) -> UITableViewCell in
-                let cell = tv.dequeueReusableCell(withIdentifier : "Cell")!
-                
-                return cell
-            },
-            titleForHeaderInSection: { dataSource, sectionIndex in
-                return dataSource[sectionIndex].model
-            }
-        )
+        
         
         APIService.shared.getDataFromURL()
             .subscribe(onNext:{ [self] cellArray in
                 cellArray.forEach({cell in
                     self.cells[cell.section].items.append(cell)
+                    cellsObservable.accept(self.cells)
                 })
             })
             .disposed(by: bag)

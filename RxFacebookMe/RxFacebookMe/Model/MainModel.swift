@@ -39,7 +39,7 @@ struct RawCellInfo : Decodable {
 struct CellInfo {
     let id : String
     let section : Int
-    let cellType : CellType?
+    let cellType : CellType
     let imgName : String?
     let title : String
     let detailTitle : String?

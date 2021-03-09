@@ -28,7 +28,7 @@ class APIService {
                         
                         let rawData = try JSONDecoder().decode(Response.self, from: jsonData)
                         
-                        let cellInfo = rawData.cellInfos.map({ cell -> CellInfo in return CellInfo(id: UUID().uuidString, section: cell.section, cellType: CellType(rawValue: cell.cellType), imgName: cell.imgName, title: cell.title, detailTitle: cell.detailTitle) })
+                        let cellInfo = rawData.cellInfos.map({ cell -> CellInfo in return CellInfo(id: UUID().uuidString, section: cell.section, cellType: CellType(rawValue: cell.cellType)!, imgName: cell.imgName, title: cell.title, detailTitle: cell.detailTitle) })
                         
                         observer.onNext(cellInfo)
                         observer.onCompleted()
