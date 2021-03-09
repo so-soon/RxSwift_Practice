@@ -44,3 +44,13 @@ struct CellInfo {
     let title : String
     let detailTitle : String?
 }
+
+extension CellInfo : Equatable {
+    static func == (lhs : CellInfo , rhs: CellInfo) -> Bool {
+        return lhs.cellType == rhs.cellType &&
+        lhs.section == rhs.section &&
+        lhs.imgName == rhs.imgName &&
+        lhs.title == rhs.title &&
+        lhs.detailTitle == rhs.detailTitle
+    }
+}
