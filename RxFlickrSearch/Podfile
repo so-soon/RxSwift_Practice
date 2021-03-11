@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'RxFlickrSearch' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Alamofire'
+  pod 'RxBlocking'
+  # Pods for RxFlickrSearch
+
+  target 'RxFlickrSearchTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'RxFlickrSearchUITests' do
+    # Pods for testing
+  end
+
+end

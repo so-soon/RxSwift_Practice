@@ -1,0 +1,6 @@
+framework module Pods_RxFlickrSearch_RxFlickrSearchUITests {
+  umbrella header "Pods-RxFlickrSearch-RxFlickrSearchUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
