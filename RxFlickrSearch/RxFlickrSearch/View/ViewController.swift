@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
@@ -14,6 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    //MARK:- Interface Builder Links
+    @IBOutlet weak var tfSearch: UITextField!
+    
+    
 }
 

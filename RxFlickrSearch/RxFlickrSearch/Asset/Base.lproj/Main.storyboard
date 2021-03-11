@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="xFO-Y7-4iG">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="xFO-Y7-4iG" customClass="PhotoCollectionViewCell" customModule="RxFlickrSearch" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dvM-PA-c36">
@@ -84,6 +84,9 @@
                         </textField>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="BRP-jz-jHT"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tfSearch" destination="TFu-05-0Yg" id="izL-pu-b1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
