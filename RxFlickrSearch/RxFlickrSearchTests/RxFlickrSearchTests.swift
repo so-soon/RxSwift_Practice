@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import RxBlocking
+
 @testable import RxFlickrSearch
 
 class RxFlickrSearchTests: XCTestCase {
@@ -21,6 +23,16 @@ class RxFlickrSearchTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testAPIService(){
+        do{
+            let data = try APIService.shared.photoSearch(with: "tennis").toBlocking().first()
+            print(data)
+            XCTAssertNotNil(data)
+        }catch(let error){
+            print(error.localizedDescription)
+        }
     }
 
     func testPerformanceExample() throws {
