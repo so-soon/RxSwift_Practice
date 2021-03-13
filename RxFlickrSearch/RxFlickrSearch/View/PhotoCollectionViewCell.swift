@@ -12,5 +12,6 @@ import RxCocoa
 class PhotoCollectionViewCell: UICollectionViewCell {
     static let identifier : String = "PhotoCell"
     
+    @IBOutlet weak var ivPhoto: UIImageView!
     
 }

@@ -45,6 +45,9 @@
                                                 <constraint firstItem="7P7-Gk-awk" firstAttribute="top" secondItem="dvM-PA-c36" secondAttribute="top" id="sib-8n-G6a"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="ivPhoto" destination="7P7-Gk-awk" id="F9o-so-qmt"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerCell" id="Ykv-qD-nOQ" customClass="HeaderCollectionReusableView" customModule="RxFlickrSearch" customModuleProvider="target">
@@ -85,6 +88,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="BRP-jz-jHT"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="cvPhoto" destination="EyR-Dh-zf0" id="KUo-0T-eAi"/>
                         <outlet property="tfSearch" destination="TFu-05-0Yg" id="izL-pu-b1h"/>
                     </connections>
                 </viewController>

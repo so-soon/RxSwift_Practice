@@ -32,6 +32,7 @@ class RxFlickrSearchTests: XCTestCase {
             XCTAssertNotNil(data)
         }catch(let error){
             print(error.localizedDescription)
+            
         }
     }
 

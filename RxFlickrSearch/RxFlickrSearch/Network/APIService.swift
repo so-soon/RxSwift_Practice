@@ -16,7 +16,7 @@ enum searchError : Error {
 
 class APIService{
     static let shared : APIService = APIService()
-    let apiKey = "YOUR_API_KEY_HERE"
+    let apiKey = "YOUR API KEY HERE"
     
     struct Response : Decodable {
         struct RawPhotos :Decodable {
@@ -26,7 +26,7 @@ class APIService{
         let photos : RawPhotos
     }
     
-    func photoSearch(with searchTerm : String) -> Observable<[RawPhotoModel]> {
+    func photoSearch(with searchTerm : String) -> Observable<[PhotoModel]> {
         return Observable.create({emitter in
             guard let escapedTerm = searchTerm.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics) else{
                 return emitter.onError(searchError.kEscapeTermError) as! Disposable
@@ -45,9 +45,13 @@ class APIService{
                     do{
                         let jsonData = try JSONSerialization.data(withJSONObject: data, options: .prettyPrinted)
                         
-                        let photoData = try JSONDecoder().decode(Response.self, from: jsonData)
-                        
-                        emitter.onNext(photoData.photos.photo)
+                        let rawPhotoDataArray = try JSONDecoder().decode(Response.self, from: jsonData)
+            
+                        let photoDataArray = rawPhotoDataArray.photos.photo.map({
+                            photoData -> PhotoModel in
+                            return PhotoModel(id: photoData.id, farm: photoData.farm, server: photoData.server, secret: photoData.secret)
+                        })
+                        emitter.onNext(photoDataArray)
                         emitter.onCompleted()
                     }catch(let error){
                         emitter.onError(error)
